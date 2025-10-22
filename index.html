@@ -1,8 +1,46 @@
 <!DOCTYPE html>
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
-    <p>I Love My kitty</p> 
-</head>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I love My Kitty❤️</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      background: black;
+    }
+
+    video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover; 
+    }
+
+    p {
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+      margin: 0;
+      color: white;
+      font-size: clamp(1rem, 3vw, 2.5rem); /* адаптивний розмір */
+      font-family: sans-serif;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop playsinline>
+    <source src="IMG_0147.MOV" type="video/mp4">
+    Твій браузер не підтримує відео.
+  </video>
+
+  <p>❤</p>
+</body>
+</html>
